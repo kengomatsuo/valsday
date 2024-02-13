@@ -96,7 +96,7 @@ h1{
   user-select: none; /* Standard syntax */
   cursor: pointer;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   height: 70px;
   width: 70px;
   background: #f0f;
