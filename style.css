@@ -19,6 +19,7 @@ body{
 .rain {
   position: absolute;
   color: #f0f;
+  text-wrap: nowrap;
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-size: larger;
