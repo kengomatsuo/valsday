@@ -180,7 +180,7 @@ function rain() {
   let e = document.createElement('div');
   let opacity = Math.random();
   let size = Math.random();
-  let left = Math.random() * screen.width * 0.8;
+  let left = Math.random() * screen.width * 0.6;
   let duration = Math.random();
 
   e.classList.add('rain');
@@ -195,3 +195,15 @@ function rain() {
     spawn.removeChild(e)
   },20000)
 }
+
+setInterval(() => {
+  rain();
+}, 2500);
+
+setInterval(() => {
+  rain();
+}, 2330);
+
+setInterval(() => {
+  rain();
+}, 4013);
