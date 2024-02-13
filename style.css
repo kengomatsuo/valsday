@@ -1,0 +1,181 @@
+
+body{
+  -webkit-touch-callout: none !important;
+  min-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b1e33;
+}
+
+#spawn {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.rain {
+  position: absolute;
+  color: #f0f;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-size: larger;
+  animation: raindown 4s linear forwards;
+}
+
+@keyframes raindown {
+
+  100% {
+    transform: translateY(105vh);
+  }
+}
+
+.text{
+  pointer-events: none;
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+h1{
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  pointer-events: none;
+  z-index: 3;
+  color: white;
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  border-right: 4px solid;
+  animation:
+    typing 2s steps(25),
+    cursor 1s linear infinite;
+    animation-delay: 0s, 2.5s;
+}
+
+@keyframes cursor {
+  0% {
+    border-color: white;
+  }
+  10% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+  60% {
+    border-color: white;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.heart {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  height: 70px;
+  width: 70px;
+  background: #f0f;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 60px rgba(255, 0, 255, 0.696);
+  animation:
+    heart .9s infinite,
+    glow 6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-duration: .5s;
+}
+
+.heart:hover {
+  box-shadow: -10px 10px 110px #f0f;
+}
+
+.heart:active {
+  scale: 1.2;
+  transition-duration: .3s;
+  animation-duration: .4s;
+}
+
+@keyframes glow {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes heart {
+  0%{
+    transform: rotate(-45deg) scale(1.07);
+  }
+  24%{
+    transform: rotate(-45deg) scale(1);
+  }
+  25%{
+    transform: rotate(-45deg) scale(1.07);
+  }
+}
+
+.heart:before {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  z-index: 2;
+  height: 70px;
+  width: 70px;
+  background: #f0f;
+  top: -50%;
+  border-radius: 50px;
+  box-shadow: -10px -10px 60px rgba(255, 0, 255, 0.696);
+  transition-duration: .5s;
+}
+
+.heart:hover:before {
+  box-shadow: -10px -10px 110px #f0f;
+}
+
+.heart:after {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  z-index: 2;
+  height: 70px;
+  width: 70px;
+  background: #f0f;
+  right: -50%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 60px rgba(255, 0, 255, 0.696);
+  transition-duration: .5s;
+}
+
+.heart:hover:after {
+  box-shadow: 10px 10px 110px #f0f;
+}
