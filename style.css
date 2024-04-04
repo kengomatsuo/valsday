@@ -53,7 +53,7 @@ a:hover {
   color: white;
 }
 
-.text *{
+#textanimate{
   -webkit-user-select: none !important;
   user-select: none !important;
   pointer-events: none;
