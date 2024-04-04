@@ -10,8 +10,7 @@ body{
 }
 
 section {
-  width: 100vw;
-  height: 100vh;
+  top: 100vh;
 }
 
 #spawn {
@@ -54,7 +53,7 @@ a:hover {
   color: white;
 }
 
-.text h1{
+.text *{
   -webkit-user-select: none !important;
   user-select: none !important;
   pointer-events: none;
