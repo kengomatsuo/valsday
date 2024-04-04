@@ -16,7 +16,7 @@ window.onload = () => {
     greetings.innerText = "Happy Valentine's Day, Vy"
   } else {
     greetings.innerText = "It's not Valentine's Day yet, Vy"
-    root.style.setProperty("--steps","32")
+    root.style.setProperty("--steps", "32")
   }
 }
 
