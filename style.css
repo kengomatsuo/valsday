@@ -54,7 +54,7 @@ a:hover {
   color: white;
 }
 
-h1{
+.text h1{
   -webkit-user-select: none !important;
   user-select: none !important;
   pointer-events: none;
