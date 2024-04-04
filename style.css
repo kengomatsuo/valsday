@@ -50,6 +50,9 @@ body {
 }
 
 #progress {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  pointer-events: none;
   color: white;
   font-family: "Courier Prime", monospace;
   font-weight: 400;
