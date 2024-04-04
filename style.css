@@ -3,7 +3,11 @@ body{
   -webkit-touch-callout: none !important;
   min-height: 100vh;
   overflow-x: hidden;
+<<<<<<< HEAD
+  display: flexbox;
+=======
   display: flex;
+>>>>>>> 6d98dba1a288b3c45be84bc948f624335f5f728
   align-items: center;
   justify-content: center;
   background-color: #0b1e33;
