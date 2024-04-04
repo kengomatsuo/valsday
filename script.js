@@ -23,7 +23,6 @@ window.onload = () => {
 // progress loop
 var progressText = document.getElementById("progress")
 var counter = 0
-progressArr = ["New stuff in progress"]
 setInterval(() => {
   let concat = ""
   counter++
