@@ -2,7 +2,7 @@
 body{
   -webkit-touch-callout: none !important;
   min-height: 90vh;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
