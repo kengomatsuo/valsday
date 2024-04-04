@@ -12,7 +12,6 @@ body{
 section {
   display: flex;
   height: 100%;
-  position: relative;
 }
 
 #spawn {
