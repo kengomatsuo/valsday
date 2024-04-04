@@ -3,14 +3,15 @@ body{
   -webkit-touch-callout: none !important;
   min-height: 90vh;
   overflow-x: hidden;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   background-color: #0b1e33;
 }
 
 section {
-  top: 100vh;
+  display: flex;
+  height: 100%;
 }
 
 #spawn {
@@ -53,7 +54,7 @@ a:hover {
   color: white;
 }
 
-#textanimate{
+#happyvals{
   -webkit-user-select: none !important;
   user-select: none !important;
   pointer-events: none;
