@@ -209,7 +209,7 @@ function rain() {
   let e = document.createElement('div');
   let opacity = Math.random();
   let size = Math.random();
-  let left = Math.random() * screen.width;
+  let left = Math.random() * screen.width * 0.7;
   let duration = Math.random();
 
   e.classList.add('rain');
