@@ -7,6 +7,35 @@ function heartclicked() {
   }
 }
 
+// check if Valentine's Day
+var greetings = document.getElementById("happyvals")
+var root = document.documentElement
+const date = new Date()
+window.onload = () => {
+  if (date.getMonth() == 1 && date.getDate() == 14) {
+    greetings.innerText = "Happy Valentine's Day, Vy"
+  } else {
+    greetings.innerText = "It's not Valentine's Day yet, Vy"
+    root.style.setProperty("--steps","32")
+  }
+}
+
+// progress loop
+var progressText = document.getElementById("progress")
+var counter = 0
+progressArr = ["New stuff in progress"]
+setInterval(() => {
+  let concat = ""
+  counter++
+  if (counter == 4) {
+    counter = 0
+  }
+  for (let i = 0; i < counter; i++) {
+    concat += "."
+  }
+  progressText.innerText = "New stuff in progress" + concat
+}, 1000);
+
 function randomText() {
   var array = [
     "እወድሃለው",
@@ -193,7 +222,7 @@ function rain() {
 
   setTimeout(function () {
     spawn.removeChild(e)
-  },20000)
+  }, 20000)
 }
 
 setInterval(() => {
