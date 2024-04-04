@@ -100,7 +100,7 @@ a:hover {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   height: 70px;
   width: 70px;
