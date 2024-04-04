@@ -2,6 +2,16 @@
   --steps: 25;
 }
 
+html {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: #0b1e33;
 }
