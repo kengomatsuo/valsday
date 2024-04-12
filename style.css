@@ -1,5 +1,7 @@
 :root {
   --steps: 25;
+  --main-color: #f0f;
+  --main-color-alpha: rgba(255, 0, 255, 0.696);
 }
 
 html {
@@ -36,7 +38,7 @@ body {
 
 .rain {
   position: absolute;
-  color: #f0f;
+  color: --main-color;
   text-wrap: nowrap;
   font-family: "Courier Prime", monospace;
   font-weight: 400;
@@ -137,9 +139,9 @@ a:hover {
   z-index: 3;
   height: 70px;
   width: 70px;
-  background: #f0f;
+  background: --main-color;
   transform: rotate(-45deg);
-  box-shadow: -10px 10px 60px rgba(255, 0, 255, 0.696);
+  box-shadow: -10px 10px 60px --main-color-alpha;
   animation:
     heart .9s infinite,
     glow 6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -147,7 +149,7 @@ a:hover {
 }
 
 .heart:hover {
-  box-shadow: -10px 10px 110px #f0f;
+  box-shadow: -10px 10px 110px --main-color;
 }
 
 .heart:active {
@@ -190,7 +192,7 @@ a:hover {
   z-index: 2;
   height: 70px;
   width: 70px;
-  background: #f0f;
+  background: --main-color;
   top: -50%;
   border-radius: 50px;
   box-shadow: -10px -10px 60px rgba(255, 0, 255, 0.696);
@@ -198,7 +200,7 @@ a:hover {
 }
 
 .heart:hover:before {
-  box-shadow: -10px -10px 110px #f0f;
+  box-shadow: -10px -10px 110px --main-color;
 }
 
 .heart:after {
@@ -215,7 +217,7 @@ a:hover {
   z-index: 2;
   height: 70px;
   width: 70px;
-  background: #f0f;
+  background: --main-color;
   right: -50%;
   border-radius: 50px;
   box-shadow: 10px 10px 60px rgba(255, 0, 255, 0.696);
@@ -223,5 +225,5 @@ a:hover {
 }
 
 .heart:hover:after {
-  box-shadow: 10px 10px 110px #f0f;
+  box-shadow: 10px 10px 110px --main-color;
 }

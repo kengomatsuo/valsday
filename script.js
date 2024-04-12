@@ -12,12 +12,14 @@ var greetings = document.getElementById("happyvals")
 var root = document.documentElement
 const date = new Date()
 window.onload = () => {
-  if (date.getMonth() == 1 && date.getDate() == 14) {
-    greetings.innerText = "Happy Valentine's Day, Vy"
-  } else {
-    greetings.innerText = "It's not Valentine's Day yet, Vy"
-    root.style.setProperty("--steps", "32")
-  }
+  greetings.innerText = "Will there ever be next valentines?"
+  root.style.setProperty("--steps", "35")
+  // if (date.getMonth() == 1 && date.getDate() == 14) {
+  //   greetings.innerText = "Happy Valentine's Day, Vy"
+  // } else {
+  //   greetings.innerText = "It's not Valentine's Day yet, Vy"
+  //   root.style.setProperty("--steps", "32")
+  // }
 }
 
 // progress loop
