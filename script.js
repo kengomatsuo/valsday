@@ -38,7 +38,7 @@ setInterval(() => {
 }, 1000);
 
 function randomText() {
-  var array = [
+  let love = [
     "እወድሃለው",
     "Aщьызабзэ",
     "Ich han di geer",
@@ -201,8 +201,80 @@ function randomText() {
     "Σ'αγαπώ",
     "Nna luwad"
   ];
-  const random = Math.floor(Math.random() * array.length);
-  return array[random];
+
+  let miss = [
+    "Mi manchi",
+    "Je te manque",
+    "Ich vermisse dich",
+    "Te extraño",
+    "Eu sinto sua falta",
+    "Я скучаю по тебе",
+    "أشتاق إليك",
+    "你想我了",
+    "나는 너를 보고 싶어",
+    "Ik mis je",
+    "Μου λείπεις",
+    "Ich vermisse dich",
+    "Mij mankeert u",
+    "मुझे तुम्हारी याद आती है",
+    "Saya rindu padamu",
+    "Bhulina ma",
+    "나는 당신을 그리워합니다",
+    "Minuks",
+    "Ja tęsknię za tobą",
+    "Mwen sonje ou",
+    "ฉันคิดถึงคุณ",
+    "Я тебя скучаю",
+    "Мен сені қажет етемін",
+    "مجھے تمہاری یاد آتی ہے",
+    "Mingauk-ka mako",
+    "Ma ka fe e",
+    "Zehnäm mikä saa ikävän",
+    "我想念你",
+    "Sinto a tua falta",
+    "Man atminies pēc tevis",
+    "Akukho ozakukhumbula",
+    "Nakukumbuka",
+    "I miss you",
+    "Je veux que tu reviennes",
+    "Ich will dich zurück",
+    "Quiero que vuelvas",
+    "Eu quero você de volta",
+    "Я хочу, чтобы ты вернулся",
+    "أريدك أن تعود",
+    "我希望你回来",
+    "네가 돌아오길 원해",
+    "Jag vill att du ska komma tillbaka",
+    "Ik wil dat je terugkomt",
+    "Θέλω να γυρίσεις",
+    "أريدك أن تعود",
+    "Hinditawo ndiwe",
+    "मुझे तुम्हें वापस चाहिए",
+    "Aku ingin kamu kembali",
+    "मला तुम्हाला परत आणण्याची इच्छा आहे",
+    "म तिमीलाई पछि चाहन्छु",
+    "나는 너를 다시 원해",
+    "Ma tahan, et sa tagasi tuled",
+    "Chcę, żebyś wrócił",
+    "Mwen vle ou tounen",
+    "ฉันต้องการให้คุณกลับมา",
+    "Я хочу, щоб ти повернувся",
+    "Мен сені қайта қабылдауға күшім келеді",
+    "می‌خواهم که به تو برگردم",
+    "သင့်ကိုပြန်သွားရန်ကိုလိုအပ်သည်",
+    "Mo ni nkan to wa nii",
+    "Laman nangu ka",
+    "Minä haluan sinut takaisin",
+    "我想要你回來",
+    "Quero que tu volvas",
+    "Es gribu, lai tu atgrieztos",
+    "Ndiyakuthanda",
+    "Nakupenda",
+    "I want you back"
+  ];
+
+  const random = Math.floor(Math.random() * miss.length);
+  return miss[random];
 }
 
 function rain() {
