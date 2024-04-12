@@ -14,11 +14,13 @@ const date = new Date()
 window.onload = () => {
   greetings.innerText = "Will there ever be next valentines?"
   root.style.setProperty("--steps", "35")
+  document.title = "pft"
   // if (date.getMonth() == 1 && date.getDate() == 14) {
   //   greetings.innerText = "Happy Valentine's Day, Vy"
   // } else {
   //   greetings.innerText = "It's not Valentine's Day yet, Vy"
   //   root.style.setProperty("--steps", "32")
+  //   document.title = "Be a bit patient dear~"
   // }
 }
 
