@@ -1,7 +1,7 @@
 :root {
   --steps: 25;
-  --main-color: #f0f;
-  --main-color-alpha: rgba(255, 0, 255, 0.696);
+  --main-color: rgb(0, 255, 174);
+  --main-color-alpha: rgba(0, 255, 174, 0.696);
 }
 
 html {
