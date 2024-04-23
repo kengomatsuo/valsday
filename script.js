@@ -13,7 +13,11 @@ var root = document.documentElement
 const date = new Date()
 window.onload = () => {
   document.title = "pft"
-  if (date.getMonth() != 1 || date.getDate() != 14) {
+  if (date.getMonth() == 4 && date.getDate() == 2) {
+    greetings.innerText = "Happy birthday, wishing you the best"
+    root.style.setProperty("--steps", "36")
+  }
+  else if (date.getMonth() != 1 || date.getDate() != 14) {
     greetings.innerText = "Will there ever be next valentines?"
     root.style.setProperty("--steps", "35")
   }
